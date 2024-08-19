@@ -1,0 +1,148 @@
+\hypertarget{classgraph_builder}{}\doxysection{graph\+Builder Class Reference}
+\label{classgraph_builder}\index{graphBuilder@{graphBuilder}}
+
+
+class that auxiliates the graph creation  
+
+
+
+
+{\ttfamily \#include $<$graph\+Builder.\+h$>$}
+
+
+
+Collaboration diagram for graph\+Builder\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \mbox{\hyperlink{classgraph_builder_a03c8ecef328ca3f07c8baab9c7fdedc4}{get\+Portugal\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em Get the Portugal \mbox{\hyperlink{class_graph}{Graph}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_builder_aef5426e454ee099a56e7ce1d3e093a51}{set\+Portugal\+Graph}} (const \mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&portugal\+Graph)
+\begin{DoxyCompactList}\small\item\em Set the Portugal \mbox{\hyperlink{class_graph}{Graph}} object. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classpipe}{pipe}} $>$ \mbox{\hyperlink{classgraph_builder_a297cb149e53ff11faa8a4e4079e93b49}{create\+Edges}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&portugal\+Graph)
+\begin{DoxyCompactList}\small\item\em Create a Edges of the graph. \end{DoxyCompactList}\item 
+map$<$ string, \mbox{\hyperlink{classcity}{city}} $>$ \mbox{\hyperlink{classgraph_builder_a681a64ae5c49328417ef82cfab599569}{build\+City\+Map}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&portugal\+Graph)
+\begin{DoxyCompactList}\small\item\em builds the cities map, based on the portugal map \end{DoxyCompactList}\item 
+map$<$ string, \mbox{\hyperlink{classstation}{station}} $>$ \mbox{\hyperlink{classgraph_builder_ab938613ec0b069d1f9a754731d732e99}{build\+Station\+Map}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&portugal\+Graph)
+\begin{DoxyCompactList}\small\item\em builds the stations map, based on the portugal map \end{DoxyCompactList}\item 
+map$<$ string, \mbox{\hyperlink{classwater_reservoir}{water\+Reservoir}} $>$ \mbox{\hyperlink{classgraph_builder_a74260ff13bde48db5ddd02fdb66f1468}{build\+Water\+Reservoir\+Map}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&portugal\+Graph)
+\begin{DoxyCompactList}\small\item\em builds the WRs map, based on the portugal map \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgraph_builder_a230d5f44509b31e50191f3500df82116}\label{classgraph_builder_a230d5f44509b31e50191f3500df82116}} 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ {\bfseries portugal\+Graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class that auxiliates the graph creation 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgraph_builder_a681a64ae5c49328417ef82cfab599569}\label{classgraph_builder_a681a64ae5c49328417ef82cfab599569}} 
+\index{graphBuilder@{graphBuilder}!buildCityMap@{buildCityMap}}
+\index{buildCityMap@{buildCityMap}!graphBuilder@{graphBuilder}}
+\doxysubsubsection{\texorpdfstring{buildCityMap()}{buildCityMap()}}
+{\footnotesize\ttfamily map$<$ string, \mbox{\hyperlink{classcity}{city}} $>$ graph\+Builder\+::build\+City\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&}]{portugal\+Graph }\end{DoxyParamCaption})}
+
+
+
+builds the cities map, based on the portugal map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em portugal\+Graph} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+map$<$string, city$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_builder_ab938613ec0b069d1f9a754731d732e99}\label{classgraph_builder_ab938613ec0b069d1f9a754731d732e99}} 
+\index{graphBuilder@{graphBuilder}!buildStationMap@{buildStationMap}}
+\index{buildStationMap@{buildStationMap}!graphBuilder@{graphBuilder}}
+\doxysubsubsection{\texorpdfstring{buildStationMap()}{buildStationMap()}}
+{\footnotesize\ttfamily map$<$ string, \mbox{\hyperlink{classstation}{station}} $>$ graph\+Builder\+::build\+Station\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&}]{portugal\+Graph }\end{DoxyParamCaption})}
+
+
+
+builds the stations map, based on the portugal map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em portugal\+Graph} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+map$<$string, station$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_builder_a74260ff13bde48db5ddd02fdb66f1468}\label{classgraph_builder_a74260ff13bde48db5ddd02fdb66f1468}} 
+\index{graphBuilder@{graphBuilder}!buildWaterReservoirMap@{buildWaterReservoirMap}}
+\index{buildWaterReservoirMap@{buildWaterReservoirMap}!graphBuilder@{graphBuilder}}
+\doxysubsubsection{\texorpdfstring{buildWaterReservoirMap()}{buildWaterReservoirMap()}}
+{\footnotesize\ttfamily map$<$ string, \mbox{\hyperlink{classwater_reservoir}{water\+Reservoir}} $>$ graph\+Builder\+::build\+Water\+Reservoir\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&}]{portugal\+Graph }\end{DoxyParamCaption})}
+
+
+
+builds the WRs map, based on the portugal map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em portugal\+Graph} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+map$<$string, water\+Reservoir$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_builder_a297cb149e53ff11faa8a4e4079e93b49}\label{classgraph_builder_a297cb149e53ff11faa8a4e4079e93b49}} 
+\index{graphBuilder@{graphBuilder}!createEdges@{createEdges}}
+\index{createEdges@{createEdges}!graphBuilder@{graphBuilder}}
+\doxysubsubsection{\texorpdfstring{createEdges()}{createEdges()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classpipe}{pipe}} $>$ graph\+Builder\+::create\+Edges (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&}]{portugal\+Graph }\end{DoxyParamCaption})}
+
+
+
+Create a Edges of the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em portugal\+Graph} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$pipe$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_builder_a03c8ecef328ca3f07c8baab9c7fdedc4}\label{classgraph_builder_a03c8ecef328ca3f07c8baab9c7fdedc4}} 
+\index{graphBuilder@{graphBuilder}!getPortugalGraph@{getPortugalGraph}}
+\index{getPortugalGraph@{getPortugalGraph}!graphBuilder@{graphBuilder}}
+\doxysubsubsection{\texorpdfstring{getPortugalGraph()}{getPortugalGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ graph\+Builder\+::get\+Portugal\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Portugal \mbox{\hyperlink{class_graph}{Graph}} object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_graph}{Graph$<$string$>$}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_builder_aef5426e454ee099a56e7ce1d3e093a51}\label{classgraph_builder_aef5426e454ee099a56e7ce1d3e093a51}} 
+\index{graphBuilder@{graphBuilder}!setPortugalGraph@{setPortugalGraph}}
+\index{setPortugalGraph@{setPortugalGraph}!graphBuilder@{graphBuilder}}
+\doxysubsubsection{\texorpdfstring{setPortugalGraph()}{setPortugalGraph()}}
+{\footnotesize\ttfamily void graph\+Builder\+::set\+Portugal\+Graph (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_graph}{Graph}}$<$ string $>$ \&}]{portugal\+Graph }\end{DoxyParamCaption})}
+
+
+
+Set the Portugal \mbox{\hyperlink{class_graph}{Graph}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em portugal\+Graph} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+controller/graph\+Builder.\+h\item 
+controller/graph\+Builder.\+cpp\end{DoxyCompactItemize}

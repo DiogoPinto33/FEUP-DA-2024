@@ -1,0 +1,197 @@
+\hypertarget{classpipe}{}\doxysection{pipe Class Reference}
+\label{classpipe}\index{pipe@{pipe}}
+
+
+pipe class, constructs a pipe from source service to target service  
+
+
+
+
+{\ttfamily \#include $<$pipe.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpipe_acc4e60380313b014fbb99dfdef1db6eb}{pipe}} (const string \&source, const string \&dest, int capacity, bool direction)
+\begin{DoxyCompactList}\small\item\em Construct a new pipe object. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classpipe_aa3d9645fed16fc5a53b141652b4696db}{get\+Source}} () const
+\begin{DoxyCompactList}\small\item\em Get the source pipe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpipe_a7578a0a9226ff9f29a694de5b3d2f7fe}{set\+Source}} (const string \&source)
+\begin{DoxyCompactList}\small\item\em Set the Source pipe. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classpipe_a61c931271fe51897d434b63663c67955}{get\+Dest}} () const
+\begin{DoxyCompactList}\small\item\em Get the Destination pipe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpipe_a4ab5e52738f575ed1e87e841d38e56a0}{set\+Dest}} (const string \&dest)
+\begin{DoxyCompactList}\small\item\em Set the destination pipe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classpipe_a2b4e23b3d1f529d982fc23f3926459ca}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Get the pipe capacity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpipe_ac5754a67bd0b76195bda82ecaa706d59}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Set the pipe capacity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpipe_adcb779bdaf69ac3952b2a9b9c32166f0}{is\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em is the pipe undirectional or bidirectional \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpipe_acff407a21c8090a5c096b07ccb1bb8d6}{set\+Direction}} (bool direction)
+\begin{DoxyCompactList}\small\item\em Set the Direction of the pipe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpipe_a37b50b924f81b255c8de85f02c76c890}\label{classpipe_a37b50b924f81b255c8de85f02c76c890}} 
+string {\bfseries source}
+\item 
+\mbox{\Hypertarget{classpipe_a4eea40f67f420dcc1d318bc1b508816a}\label{classpipe_a4eea40f67f420dcc1d318bc1b508816a}} 
+string {\bfseries dest}
+\item 
+\mbox{\Hypertarget{classpipe_aa26110113d47f9bd41c6236e23474ea2}\label{classpipe_aa26110113d47f9bd41c6236e23474ea2}} 
+int {\bfseries capacity}
+\item 
+\mbox{\Hypertarget{classpipe_a8c0f1fb7c681526f411a0f1604bf40c4}\label{classpipe_a8c0f1fb7c681526f411a0f1604bf40c4}} 
+bool {\bfseries direction}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+pipe class, constructs a pipe from source service to target service 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpipe_acc4e60380313b014fbb99dfdef1db6eb}\label{classpipe_acc4e60380313b014fbb99dfdef1db6eb}} 
+\index{pipe@{pipe}!pipe@{pipe}}
+\index{pipe@{pipe}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily pipe\+::pipe (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{const string \&}]{dest,  }\item[{int}]{capacity,  }\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Construct a new pipe object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & service point A \\
+\hline
+{\em dest} & service point B \\
+\hline
+{\em capacity} & capacity of the pipe \\
+\hline
+{\em direction} & pipe direction \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpipe_a2b4e23b3d1f529d982fc23f3926459ca}\label{classpipe_a2b4e23b3d1f529d982fc23f3926459ca}} 
+\index{pipe@{pipe}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int pipe\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the pipe capacity. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpipe_a61c931271fe51897d434b63663c67955}\label{classpipe_a61c931271fe51897d434b63663c67955}} 
+\index{pipe@{pipe}!getDest@{getDest}}
+\index{getDest@{getDest}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{getDest()}{getDest()}}
+{\footnotesize\ttfamily const string \& pipe\+::get\+Dest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Destination pipe. 
+
+\begin{DoxyReturn}{Returns}
+const string\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpipe_aa3d9645fed16fc5a53b141652b4696db}\label{classpipe_aa3d9645fed16fc5a53b141652b4696db}} 
+\index{pipe@{pipe}!getSource@{getSource}}
+\index{getSource@{getSource}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily const string \& pipe\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the source pipe. 
+
+\begin{DoxyReturn}{Returns}
+const string\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpipe_adcb779bdaf69ac3952b2a9b9c32166f0}\label{classpipe_adcb779bdaf69ac3952b2a9b9c32166f0}} 
+\index{pipe@{pipe}!isDirection@{isDirection}}
+\index{isDirection@{isDirection}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{isDirection()}{isDirection()}}
+{\footnotesize\ttfamily bool pipe\+::is\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+is the pipe undirectional or bidirectional 
+
+\begin{DoxyReturn}{Returns}
+true -\/ 1 -\/ undirectional 
+
+false -\/ 0 -\/ bidirectional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpipe_ac5754a67bd0b76195bda82ecaa706d59}\label{classpipe_ac5754a67bd0b76195bda82ecaa706d59}} 
+\index{pipe@{pipe}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void pipe\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Set the pipe capacity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpipe_a4ab5e52738f575ed1e87e841d38e56a0}\label{classpipe_a4ab5e52738f575ed1e87e841d38e56a0}} 
+\index{pipe@{pipe}!setDest@{setDest}}
+\index{setDest@{setDest}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{setDest()}{setDest()}}
+{\footnotesize\ttfamily void pipe\+::set\+Dest (\begin{DoxyParamCaption}\item[{const string \&}]{dest }\end{DoxyParamCaption})}
+
+
+
+Set the destination pipe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpipe_acff407a21c8090a5c096b07ccb1bb8d6}\label{classpipe_acff407a21c8090a5c096b07ccb1bb8d6}} 
+\index{pipe@{pipe}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void pipe\+::set\+Direction (\begin{DoxyParamCaption}\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set the Direction of the pipe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpipe_a7578a0a9226ff9f29a694de5b3d2f7fe}\label{classpipe_a7578a0a9226ff9f29a694de5b3d2f7fe}} 
+\index{pipe@{pipe}!setSource@{setSource}}
+\index{setSource@{setSource}!pipe@{pipe}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void pipe\+::set\+Source (\begin{DoxyParamCaption}\item[{const string \&}]{source }\end{DoxyParamCaption})}
+
+
+
+Set the Source pipe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/pipe.\+h\item 
+model/pipe.\+cpp\end{DoxyCompactItemize}
